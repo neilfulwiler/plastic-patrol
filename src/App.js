@@ -27,7 +27,6 @@ import Map from "./components/MapPage/Map";
 import CustomPhotoDialog from "./components/CustomPhotoDialog";
 import ModeratorPage from "./components/ModeratorPage";
 import LoginFirebase from "./components/LoginFirebase";
-import Login from "./components/Login";
 import AboutPage from "./components/AboutPage";
 import LeaderboardPage from "./components/Leaderboard";
 import WriteFeedbackPage from "./components/WriteFeedbackPage";
@@ -872,10 +871,9 @@ class App extends Component {
           </RootRef>
         )}
 
-        <Login
+        <LoginFirebase
           open={this.state.loginLogoutDialogOpen && !this.state.user}
           handleClose={this.handleLoginClose}
-          loginComponent={LoginFirebase}
         />
 
         <DrawerContainer
