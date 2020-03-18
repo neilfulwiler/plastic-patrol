@@ -10,7 +10,8 @@ class User {
     photoURL,
     description,
     location,
-    profileURL
+    profileURL,
+    provider // the authentication provider (fb vs email vs google)
   ) {
     this.id = id;
     this.displayName = displayName;
@@ -23,6 +24,7 @@ class User {
     this.description = description;
     this.location = location;
     this.profileURL = profileURL;
+    this.provider = provider;
   }
 }
 
